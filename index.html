@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <meta name="description" content="Sage Thomas's Portfolio/Resume">
+    <meta name="author" content="Sage Thomas">    
     <link rel="shortcut icon" href="favicon.ico">  
     
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -19,15 +19,8 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github acitivity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
 </head> 
 
 <body>
@@ -93,7 +86,8 @@
                                     </p>
                                     <p>
                                         <a href="https://www.9news.com/article/tech/cu-boulder-computer-engineers-try-to-crack-the-code-of-anonymous-nyt-op-ed-author/73-593252973">9new Colorado interviewed us</a> 
-                                        when we used Bookmatch to attempt to uncover the infamous anonymous NYT op-ed author and White House cabinet member.
+                                        when we used Bookmatch to attempt to uncover the infamous anonymous NYT op-ed author and White House cabinet member. You can read the blog post detailing our methods 
+                                        <a href="https://blog.bookmatch.com/analysis/2018/09/09/who-wrote-the-resistance-op-ed.html">here</a>.
                                     </p>
                                 </div><!--//desc-->         
                                 <!-- <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                  -->
@@ -112,8 +106,13 @@
                                 <div class="desc text-left">                                    
                                     <p>
                                         TrackerML is a company that I co-founded at CU that is similar to Git and Github, but for machine learning development. 
-                                        I wrote the SDK and CLI that allows users to version control files and track parameters and accuracies. 
+                                        I wrote the Python SDK and CLI (that can be install via Pip) that allows users to version control files and track parameters and accuracies. 
                                         This data is sent to the web app at tracker.ml for convenient viewing and sharing.
+                                    </p>
+                                    <p>
+                                        <a class="more-link" href="https://trackerml.github.io/trackerml-sdk/" target="_blank"><i class="fas fa-external-link-alt"></i>Documentation</a>
+                                        &#160 &#160
+                                        <a class="more-link" href="https://github.com/trackerml/trackerml-sdk" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a>
                                     </p>
                                 </div><!--//desc-->         
                                 <!-- <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                  -->
@@ -133,8 +132,9 @@
                                     <p>
                                         Ds3_script is a Groovy DSL that makes it easy to create scripts with Spectra Logic's DS3 data storage API. 
                                         DS3 is similar to Amazon's S3 API so it can be arduous to write an otherwise simple script. Ds3_script 
-                                        extracts away much of the bloat and makes data managment easy enough for any IT admin.
+                                        extracts away much of the bloat and makes data managment easy enough for any IT admin. There are installers for Windows, OSX, and Ubuntu.
                                     </p>
+                                    <p><a class="more-link" href="https://github.com/SpectraLogic/ds3_script" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
                                 </div><!--//desc-->         
                                 <!-- <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                  -->
                             </div><!--//item-->
@@ -150,11 +150,11 @@
                         <div class="content">
 
                         <div class="item row">
-                                <div class="col-md-4 col-12">
+                                <a class="col-md-4 col-12" href="projects/kjt/app.html">
                                 <img class="img-fluid project-image" src="assets/images/projects/kjt.png" alt="project name" />
-                                </div>
+                                </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Android App for KJT Mechanical</h3>
+                                    <h3 class="title"><a href="projects/kjt/app.html">Android App for KJT Mechanical</a></h3>
                                     <p class="mb-2">Freelance project working with a local HVAC company to develop an Android application to improve SEO. Similar to Nearby Now, it allows emlpoyees to send a Google review request at the end of a service. Employees can also upload an image of their work to Google Business.</p>
                                     <p><a class="more-link" href="https://www.kjtmechanical.com/" target="_blank"><i class="fas fa-external-link-alt"></i>KJT Mechanical</a></p>
                                 </div><!--//desc-->                          
@@ -172,15 +172,101 @@
                                 </div><!--//desc-->                          
                             </div><!--//item-->
 
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/sage-t/grid-of-life" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/game_of_life.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/grid-of-life" target="_blank">Grid of Life</a></h3>
+                                    <p class="summary">Grid of Life is a personal implementation of Conway's Game of Life written in Python. It's my go-to example for teaching new programmers Python.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/grid-of-life" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://photos.google.com/share/AF1QipORcs46hfRb8lJDnIco_pqJ_vdErsUBa8cUOnlCOx1w4xGPbbgDE77BnkVRBBvXng/photo/AF1QipPlK8ifxHChdEkSo-eidk0LXBX-QZMGwNSmhsIi?key=REh1NVdIa2lCQlNqWDRrc3UxaDVOckxYTFhQbzVB" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/board.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/My-IoT-Device-Code" target="_blank">IoT LED Light Board</a></h3>
+                                    <p class="summary">IoT light board that can be operated manually or using the HomeAssistant web app locally hosted on my home server. I used an Arduino Nano and ESP8266 for WiFi connectivity.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/My-IoT-Device-Code" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                    <p><a class="more-link" href="https://photos.google.com/share/AF1QipORcs46hfRb8lJDnIco_pqJ_vdErsUBa8cUOnlCOx1w4xGPbbgDE77BnkVRBBvXng/photo/AF1QipPlK8ifxHChdEkSo-eidk0LXBX-QZMGwNSmhsIi?key=REh1NVdIa2lCQlNqWDRrc3UxaDVOckxYTFhQbzVB" target="_blank"><i class="fas fa-external-link-alt"></i>Video</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/sage-t/My-IoT-Device-Code" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/door_sensor.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/My-IoT-Device-Code" target="_blank">IoT Door Sensor</a></h3>
+                                    <p class="summary">IoT door sensor that can communicate with HomeAssistant locally hosted on my home server. I use it to automatically turn on lights when entering my apartment. I used an ESP8266 for WiFi connectivity and local computing.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/My-IoT-Device-Code" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://sage-t.github.io/meltdown-forum-analysis/" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/meltdown.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://sage-t.github.io/meltdown-forum-analysis/" target="_blank">Meltdown Computer Security Vulnerability - Forum Analysis</a></h3>
+                                    <p class="summary">A website that provides an analysis of the Meltdown computer security vulnerability. It contrasts how the flaw was communicated to the general public and computer security professionals.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/meltdown-forum-analysis" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                    <p><a class="more-link" href="https://sage-t.github.io/meltdown-forum-analysis/" target="_blank"><i class="fas fa-external-link-alt"></i>Website</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/sage-t/simple-timesheet" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/timesheet.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/simple-timesheet" target="_blank">Simple Timesheet RoR App</a></h3>
+                                    <p class="summary">A Ruby on Rails web app to track employee's time at work. They can clock in and out and managers can edit timesheet mistakes.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/simple-timesheet" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/sage-t/rovor-rest-api" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/rovor.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/rovor-rest-api" target="_blank">Rovor Flight Alerts</a></h3>
+                                    <p class="summary">A Ruby on Rails web app that allowed users to create international flight ticket price alerts. Users could select general world regions and travel dates to get the best price. The web crawler was written in Python and used the SkyScanner API.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/rovor-rest-api" target="_blank"><i class="fas fa-external-link-alt"></i>Python Web Crawler - GitHub</a></p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/rovor-api" target="_blank"><i class="fas fa-external-link-alt"></i>RoR Web App - GitHub</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://youtu.be/DmapW3sVOgU" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/robot.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://youtu.be/DmapW3sVOgU" target="_blank">120lbs FRC Competition Robot</a></h3>
+                                    <p class="summary">I was lead programmer and team captain of my highschool's 2015 FRC robotics team. We had to build a robot that could carry totes and recycling bins and stack them. The robot used mecanum wheels for driving in any direction without rotating the chassis. It also had a turret that supported a claw on a vertical shaft to grab and move totes.</p>
+                                    <p><a class="more-link" href="https://youtu.be/DmapW3sVOgU" target="_blank"><i class="fas fa-external-link-alt"></i>Youtube</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/sage-t/blind-ski-helmet" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/helmet.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/sage-t/blind-ski-helmet" target="_blank">Ski Helmet for the Blind</a></h3>
+                                    <p class="summary">Many blind people enjoy skiing, so I created a ski helmet that uses proximity sensors and an arduino to audibly alert the user of incoming obstacles.</p>
+                                    <p><a class="more-link" href="https://github.com/sage-t/blind-ski-helmet" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
                             <div class="item">
                                 <h3 class="title"><a href="https://github.com/sage-t/Recipist" target="_blank">Recipist</a></h3>
                                 <p class="summary">Ruby on Rail web app that lets you input available ingredients in your kitchen an returns possible recipes.</p>
                                 <p><a class="more-link" href="https://github.com/sage-t/Recipist" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/sage-t/blind-ski-helmet" target="_blank">Ski Helmet for the Blind</a></h3>
-                                <p class="summary">Many blind people enjoy skiing, so I created a ski helmet that uses proximity sensors and an arduino to audibly alert the user of incoming obstacles.</p>
-                                <p><a class="more-link" href="https://github.com/sage-t/blind-ski-helmet" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
                             </div><!--//item-->
                             
                             <a class="btn btn-cta-secondary" href="https://github.com/sage-t">More on Github <i class="fas fa-chevron-right"></i></a>
